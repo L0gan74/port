@@ -51,3 +51,16 @@
 .links a:last-child {
   margin-right: 0;
 }
+
+.burger{
+  display: none;
+}
+
+@media (max-width: 900px) {
+  .wrapper {
+    display: none;
+  }
+  .burger{
+    display: block;
+  }
+}

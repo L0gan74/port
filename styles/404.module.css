@@ -1,0 +1,26 @@
+.error h1 {
+  color: white;
+  font-weight: 700;
+  font-size: 34px;
+  line-height: 41px;
+
+  text-align: center;
+
+  padding-bottom: 50px;
+}
+
+.error a {
+  display: block;
+  text-align: center;
+
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 29px;
+  color: #ecf1f0;
+
+  transition: all 0.5s;
+}
+
+.error a:hover{
+    text-decoration: underline !important;
+}

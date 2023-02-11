@@ -2,6 +2,7 @@ import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
 import styles from "./Header.module.css";
+import BurgerBenu from "./BugerMenu";
 
 const Header = () => {
   return (
@@ -24,7 +25,7 @@ const Header = () => {
                     <Link href="/">Главная</Link>
                   </li>
                   <li>
-                    <Link href="#">Продукты</Link>
+                    <Link href="/product">Новости</Link>
                   </li>
                   <li>
                     <Link href="/blog">Блог</Link>
@@ -53,6 +54,7 @@ const Header = () => {
                 </Link>
               </div>
             </div>
+              <BurgerBenu />
           </div>
         </div>
       </header>

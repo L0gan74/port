@@ -1,0 +1,52 @@
+.item {
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  border-radius: 16px;
+
+  min-width: 412px;
+  min-height: 390px;
+
+  position: relative;
+
+  padding: 16px;
+
+  transition: all 0.5s;
+}
+
+.item:hover{
+    box-shadow: 0 0 10px #ecf1f0;
+}
+
+.item img {
+  display: block;
+  margin: 0 auto;
+}
+
+.description h5 {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
+
+  color: #ecf1f0;
+
+  padding-top: 16px;
+}
+
+.description p {
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 21px;
+
+  color: #d4d4d4;
+}
+
+.description a {
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 21px;
+
+  color: #d4d4d4;
+
+  position: absolute;
+  bottom: 16px;
+}
