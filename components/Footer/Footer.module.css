@@ -1,0 +1,14 @@
+.footer {
+  padding: 39px 0 64px 0;
+}
+
+.footer p {
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 21px;
+
+  display: flex;
+  justify-content: center;
+
+  color: #d4d4d4;
+}
