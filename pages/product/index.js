@@ -1,23 +1,24 @@
 import styles from "./Product.module.css";
 import ProductBtn from "./productBtn/ProductBtn";
-import ProductItem from "./productItem";
+import ProductItem from "@/components/productItem";
+import Link from "next/link";
 
 export async function getServerSideProps() {
-  const response = await fetch("https://fakestoreapi.com/products?limit=6");
-  const data = await response.json();
+  const response = await fetch("https://fakestoreapi.com/products");
+  const items = await response.json();
 
-  if (!data){
-    return{
-        notFound:true,
-    }
+  if (!items) {
+    return {
+      notFound: true,
+    };
   }
 
   return {
-    props: { items: data },
+    props: { items },
   };
 }
 
-const Header = ({ items }) => {
+const Products = ({ items }) => {
   return (
     <section className={styles.product}>
       <div className={styles.header}>
@@ -29,12 +30,15 @@ const Header = ({ items }) => {
       </div>
       <ProductBtn />
       <div className={styles.main}>
-        {items.map((obj) => (
-          <ProductItem key={obj.id} obj={obj} />
-        ))}
+        {items &&
+          items.map((obj) => (
+            <Link href={`/product/${obj.id}`}>
+              <ProductItem key={obj.id} obj={obj} />
+            </Link>
+          ))}
       </div>
     </section>
   );
 };
 
-export default Header;
+export default Products;
