@@ -2,7 +2,7 @@ import styles from "./Product.module.css";
 import ProductBtn from "./productBtn/ProductBtn";
 import ProductItem from "./productItem";
 
-export async function getStaticProps() {
+export async function getServerSideProps() {
   const response = await fetch("https://fakestoreapi.com/products?limit=6");
   const data = await response.json();
 
