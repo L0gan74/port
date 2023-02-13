@@ -28,10 +28,10 @@ const Header = () => {
                     <Link href="/product">Новости</Link>
                   </li>
                   <li>
-                    <Link href="/blog">Блог</Link>
+                    <Link href="/blog">Портфолио</Link>
                   </li>
                   <li>
-                    <Link href="#">Контакты</Link>
+                    <Link href="/contact">Контакты</Link>
                   </li>
                 </ul>
               </nav>

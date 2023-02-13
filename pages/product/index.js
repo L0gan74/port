@@ -1,10 +1,11 @@
+import React from "react";
 import styles from "./Product.module.css";
 import ProductBtn from "./productBtn/ProductBtn";
 import ProductItem from "@/components/productItem";
 import Link from "next/link";
 
 export async function getServerSideProps() {
-  const response = await fetch("https://fakestoreapi.com/products");
+  const response = await fetch("https://fakestoreapi.com/products?limit=4");
   const items = await response.json();
 
   if (!items) {
