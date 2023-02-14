@@ -21,7 +21,7 @@ export async function getServerSideProps() {
 
 const Products = ({ items }) => {
   return (
-    <section className={styles.product}>
+    <div className={styles.product}>
       <div className={styles.header}>
         <h1>Новости</h1>
         <p>
@@ -33,12 +33,12 @@ const Products = ({ items }) => {
       <div className={styles.main}>
         {items &&
           items.map((obj) => (
-            <Link href={`/product/${obj.id}`}>
+            <Link href={`/news/${obj.id}`}>
               <ProductItem key={obj.id} obj={obj} />
             </Link>
           ))}
       </div>
-    </section>
+    </div>
   );
 };
 

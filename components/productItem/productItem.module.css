@@ -7,6 +7,7 @@
   min-height: 390px;
 
   position: relative;
+  bottom: -5px;
 
   padding: 16px;
 
@@ -15,6 +16,7 @@
 
 .item:hover{
     box-shadow: 0 0 10px #ecf1f0;
+    bottom: 0;
 }
 
 .item img {

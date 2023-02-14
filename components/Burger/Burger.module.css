@@ -1,0 +1,13 @@
+.burger h3 {
+  color: white;
+}
+
+.burger {
+  display: none;
+}
+
+@media (max-width: 900px) {
+  .burger {
+    display: block;
+  }
+}

@@ -1,0 +1,43 @@
+.portfolio {
+  margin-top: 60px;
+}
+
+.portfolio h1 {
+  font-size: 34px;
+  line-height: 42px;
+  text-align: center;
+  font-weight: 700;
+
+  color: white;
+}
+
+.cards {
+  margin-top: 40px;
+
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-gap: 40px;
+}
+
+.card {
+    background: rgba(255, 255, 255, 0.02);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    border-radius: 16px;
+    min-width: 300px;
+    min-height: 300px;
+    position: relative;
+    bottom: -5px;
+    padding: 16px;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+.card:hover {
+    box-shadow: 0 0 10px #ecf1f0;
+    bottom: 0;
+}
+.card img{
+    display: block;
+    width: 100%;
+    height: auto;
+}
